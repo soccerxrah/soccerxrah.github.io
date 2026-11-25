@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>九九重阳日长情陪伴时_重阳节敬老陪伴活动_登高赏菊与长者影像计划</title>
+<meta name="description" content="九九重阳日长情陪伴时，围绕重阳节敬老陪伴展开：登高赏菊路线、长者影像计划、社区陪伴活动、重阳糕与菊花酒做法、适老出行清单，适合陪父母过节与社区助老志愿者参考。">
+<meta name="keywords" content="重阳节敬老活动,登高赏菊,长者影像记录,重阳糕做法,社区陪伴计划">
+<style>
+:root{
+  --ink:#2a1f1a;
+  --ink-2:#5b4a40;
+  --ink-3:#8a7568;
+  --paper:#fbf7f1;
+  --paper-2:#f4ede2;
+  --panel:#ffffff;
+  --line:#e6dbcc;
+  --brand:#b5462f;
+  --brand-2:#d9762f;
+  --brand-soft:#f6e3d6;
+  --gold:#c9973f;
+  --green:#4f7359;
+  --shadow:0 2px 10px rgba(90,60,40,.07);
+  --shadow-lg:0 10px 30px rgba(90,60,40,.12);
+  --r:14px;
+  --r-sm:8px;
+  --ann-h:38px;
+  --head-h:66px;
+  --wrap:1320px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ann-h) + var(--head-h) + 14px)}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+  font-size:15px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+li{margin-bottom:6px}
+button{font:inherit;cursor:pointer}
+
+/* ===== 吸顶公告条 ===== */
+.annbar{
+  position:sticky;top:0;z-index:60;
+  height:var(--ann-h);
+  background:linear-gradient(90deg,#7d2f1f,#b5462f 55%,#c26a2c);
+  color:#fff5ec;
+  display:flex;align-items:center;
+  font-size:13px;
+}
+.annbar .wrap{display:flex;align-items:center;gap:14px;width:100%}
+.ann-dot{width:8px;height:8px;border-radius:50%;background:#ffd9a8;box-shadow:0 0 0 4px rgba(255,217,168,.22);flex:none}
+.ann-text{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.ann-text b{color:#ffe2bd;font-weight:600}
+.ann-more{margin-left:auto;flex:none;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:1px 12px;font-size:12px;transition:.2s}
+.ann-more:hover{background:rgba(255,255,255,.16)}
+
+/* ===== 页头 ===== */
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;
+  height:var(--head-h);
+  background:rgba(251,247,241,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head .wrap{height:100%;display:flex;align-items:center;gap:22px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-size:16px;font-weight:800;letter-spacing:.5px;color:var(--brand)}
+.brand-sub{font-size:10.5px;color:var(--ink-3);letter-spacing:1.6px}
+.nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:6px}
+.nav a{
+  font-size:13.5px;color:var(--ink-2);padding:6px 11px;border-radius:999px;transition:.18s;
+}
+.nav a:hover{background:var(--brand-soft);color:var(--brand)}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none}
+.search{
+  display:flex;align-items:center;gap:6px;background:var(--panel);
+  border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 12px;
+}
+.search input{
+  border:0;outline:0;background:transparent;width:150px;font-size:13px;color:var(--ink);
+}
+.search input::placeholder{color:#b09c8c}
+.search button{
+  border:0;background:var(--brand);color:#fff;border-radius:999px;
+  padding:4px 13px;font-size:12.5px;
+}
+.search button:hover{background:#9c3823}
+.menu-btn{display:none;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:6px 11px;font-size:13px;color:var(--ink-2)}
+:focus-visible{outline:2px solid var(--brand-2);outline-offset:2px;border-radius:6px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 380px at 82% -10%, #f9e0cb 0%, rgba(249,224,203,0) 62%),
+    radial-gradient(700px 320px at 6% 110%, #efe4d0 0%, rgba(239,228,208,0) 60%),
+    var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+  padding:52px 0 56px;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--brand-soft);color:var(--brand);
+  border-radius:999px;padding:4px 14px;font-size:12.5px;font-weight:600;letter-spacing:.5px;
+}
+.hero h1{
+  font-size:clamp(28px,3.6vw,44px);
+  letter-spacing:1px;margin:16px 0 14px;color:#3a251c;
+}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero-lead{font-size:15.5px;color:var(--ink-2);max-width:560px;margin-bottom:20px}
+.hero-lead strong{color:var(--brand);font-weight:600}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+  padding:10px 22px;font-size:14px;font-weight:600;transition:.2s;border:1px solid transparent;
+}
+.btn-main{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(181,70,47,.26)}
+.btn-main:hover{background:#9c3823;transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line);background:var(--panel);color:var(--ink-2)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-size:21px;color:var(--brand);letter-spacing:.5px}
+.hero-stats span{font-size:12.5px;color:var(--ink-3)}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 26px rgba(120,80,50,.14))}
+.hero-note{
+  position:absolute;left:-6px;bottom:6px;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--r-sm);padding:8px 13px;font-size:12px;color:var(--ink-2);box-shadow:var(--shadow);
+}
+.hero-note b{color:var(--brand)}
+
+/* ===== 三栏布局 ===== */
+.layout{
+  display:grid;
+  grid-template-columns:178px minmax(0,1fr) 250px;
+  gap:30px;
+  padding:34px 0 10px;
+  align-items:start;
+}
+.side{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 18px)}
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:16px 14px;box-shadow:var(--shadow);margin-bottom:16px;
+}
+.side-title{
+  font-size:12px;letter-spacing:2px;color:var(--ink-3);font-weight:700;
+  margin-bottom:10px;display:flex;align-items:center;gap:7px;
+}
+.side-title::before{content:"";width:14px;height:3px;border-radius:2px;background:var(--brand)}
+.chan{display:flex;flex-direction:column;gap:2px}
+.chan a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  font-size:13.5px;color:var(--ink-2);padding:6px 9px;border-radius:8px;transition:.16s;
+}
+.chan a:hover{background:var(--paper-2);color:var(--brand)}
+.chan a span{font-size:11px;color:#b6a396}
+.chan a b{font-weight:600}
+
+.hotlist{list-style:none;padding:0;margin:0;counter-reset:h}
+.hotlist li{counter-increment:h;display:flex;gap:9px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.hotlist li:last-child{border:0}
+.hotlist li::before{
+  content:counter(h);flex:none;width:18px;height:18px;border-radius:5px;
+  background:var(--paper-2);color:var(--ink-3);font-size:11px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.hotlist li:nth-child(-n+3)::before{background:var(--brand);color:#fff}
+.hotlist a:hover{color:var(--brand)}
+.hotlist em{display:block;font-style:normal;font-size:11.5px;color:var(--ink-3)}
+
+.mini-note{font-size:12.5px;color:var(--ink-3);line-height:1.7}
+
+/* ===== 板块通用 ===== */
+.main{min-width:0}
+.sec{margin-bottom:38px;scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 14px)}
+.sec-head{display:flex;align-items:flex-end;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.sec-head h2{
+  font-size:20px;letter-spacing:.5px;color:#3a251c;
+  display:flex;align-items:center;gap:9px;
+}
+.sec-head h2::before{content:"";width:5px;height:19px;border-radius:3px;background:linear-gradient(180deg,var(--brand),var(--brand-2))}
+.sec-head .sub{font-size:12.5px;color:var(--ink-3);margin-left:auto}
+.sec-intro{font-size:14px;color:var(--ink-2);margin-bottom:16px}
+
+/* 概览 */
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.overview p{font-size:14.5px;color:var(--ink-2);text-align:justify}
+.overview p:last-child{margin-bottom:0}
+.overview strong{color:var(--brand);font-weight:600}
+
+/* 精选卡片 */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:.22s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#dccbb8}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper-2)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.card:hover .card-img img{transform:scale(1.05)}
+.card-badge{
+  position:absolute;left:9px;top:9px;background:rgba(42,31,26,.78);color:#fff;
+  font-size:11px;padding:2px 9px;border-radius:999px;backdrop-filter:blur(4px);
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;flex:1}
+.card-body h3{font-size:15px;color:#3a251c;margin-bottom:7px;letter-spacing:.3px}
+.card-desc{font-size:12.8px;color:var(--ink-2);line-height:1.68;flex:1;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.tag{
+  font-size:11px;color:var(--brand);background:var(--brand-soft);
+  border-radius:5px;padding:1px 7px;white-space:nowrap;
+}
+.tag.g{color:var(--green);background:#e6efe7}
+.tag.y{color:#8a6a1f;background:#f7edd7}
+.card-meta{
+  display:flex;align-items:center;gap:10px;font-size:11.5px;color:var(--ink-3);
+  border-top:1px dashed var(--line);padding-top:9px;
+}
+.card-meta .score{color:var(--brand);font-weight:700;font-size:13px}
+
+/* 动态列表 */
+.updates{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.upd{display:flex;gap:14px;padding:13px 18px;border-bottom:1px solid var(--line);align-items:flex-start;transition:.16s}
+.upd:last-child{border-bottom:0}
+.upd:hover{background:var(--paper-2)}
+.upd-time{flex:none;width:74px;font-size:11.5px;color:var(--ink-3);padding-top:2px;line-height:1.5}
+.upd-time b{display:block;color:var(--brand);font-size:12px}
+.upd-main{flex:1;min-width:0}
+.upd-main h4{font-size:14px;color:#3a251c;margin-bottom:3px}
+.upd-main p{font-size:12.8px;color:var(--ink-2);margin:0}
+.upd-kind{flex:none;font-size:11px;color:var(--green);background:#e6efe7;border-radius:5px;padding:1px 8px;margin-top:2px}
+
+/* 分类入口 */
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:14px 14px 13px;transition:.2s;display:block;
+}
+.cat:hover{border-color:var(--brand);background:#fffaf5;transform:translateY(-2px)}
+.cat b{display:block;font-size:14.5px;color:#3a251c;margin-bottom:4px}
+.cat span{font-size:12px;color:var(--ink-3);line-height:1.6;display:block}
+.cat i{font-style:normal;font-size:11px;color:var(--brand);display:block;margin-top:6px}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px 30px;box-shadow:var(--shadow)}
+.deep h3{
+  font-size:17px;color:#3a251c;margin:26px 0 10px;padding-left:12px;
+  border-left:4px solid var(--brand-2);line-height:1.4;
+}
+.deep h3:first-child{margin-top:0}
+.deep p{font-size:14.4px;color:var(--ink-2);text-align:justify}
+.deep ul,.deep ol{font-size:14px;color:var(--ink-2)}
+.deep li{margin-bottom:7px}
+.deep strong{color:var(--brand);font-weight:600}
+.compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);
+  border-radius:var(--r-sm);overflow:hidden;margin:14px 0 18px;font-size:13.4px;
+}
+.compare>div{padding:12px 15px;border-bottom:1px solid var(--line)}
+.compare>div:nth-child(odd){background:var(--paper-2);font-weight:600;color:#3a251c}
+.compare>div:nth-child(even){color:var(--ink-2)}
+.compare>div:nth-last-child(-n+2){border-bottom:0}
+.quote{
+  border-left:3px solid var(--gold);background:#fdf8ee;padding:12px 16px;border-radius:0 var(--r-sm) var(--r-sm) 0;
+  font-size:13.6px;color:#6b5432;margin:14px 0;
+}
+
+/* 体验指南 步骤 */
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;counter-reset:s}
+.step{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:16px 18px 16px 56px;position:relative;box-shadow:var(--shadow);
+}
+.step::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  position:absolute;left:16px;top:15px;font-size:19px;font-weight:800;
+  color:var(--brand-2);letter-spacing:-.5px;
+}
+.step h4{font-size:14.5px;color:#3a251c;margin-bottom:5px}
+.step p{font-size:13px;color:var(--ink-2);margin:0}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:10px}
+details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:0 16px;box-shadow:var(--shadow);transition:.16s;
+}
+details[open]{border-color:#e0cbb6;background:#fffdfa}
+summary{
+  cursor:pointer;padding:13px 0;font-size:14.2px;font-weight:600;color:#3a251c;
+  list-style:none;display:flex;align-items:center;gap:10px;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"?";flex:none;width:20px;height:20px;border-radius:50%;
+  background:var(--brand-soft);color:var(--brand);font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+details[open] summary::before{content:"!";background:var(--brand);color:#fff}
+.faq-body{font-size:13.6px;color:var(--ink-2);padding:0 0 14px 30px}
+.faq-body p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmt{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:13px 15px;box-shadow:var(--shadow);
+}
+.cmt-top{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.avatar{
+  width:28px;height:28px;border-radius:50%;flex:none;color:#fff;font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;letter-spacing:0;
+}
+.cmt-top b{font-size:13px;color:#3a251c;font-weight:600}
+.cmt-top span{font-size:11px;color:var(--ink-3);margin-left:auto}
+.cmt p{font-size:13px;color:var(--ink-2);margin:0;line-height:1.68}
+.cmt .like{font-size:11px;color:var(--ink-3);margin-top:6px;display:block}
+
+/* 资讯 */
+.news{display:flex;flex-direction:column;gap:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.news-item{display:flex;gap:14px;padding:15px 18px;border-bottom:1px solid var(--line);transition:.16s}
+.news-item:last-child{border-bottom:0}
+.news-item:hover{background:var(--paper-2)}
+.news-item img{width:96px;height:66px;object-fit:cover;border-radius:var(--r-sm);flex:none}
+.news-body h4{font-size:14.2px;color:#3a251c;margin-bottom:4px}
+.news-body p{font-size:12.8px;color:var(--ink-2);margin:0}
+.news-date{font-size:11.5px;color:var(--ink-3);margin-top:5px;display:block}
+
+/* 相关推荐 标签索引 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rec-tags a{
+  background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:6px 15px;font-size:13px;color:var(--ink-2);transition:.18s;box-shadow:var(--shadow);
+}
+.rec-tags a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* 时间线 */
+.timeline{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;box-shadow:var(--shadow)}
+.tl{position:relative;padding-left:22px;border-left:2px solid var(--brand-soft)}
+.tl-item{position:relative;padding-bottom:16px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-29px;top:6px;width:11px;height:11px;border-radius:50%;
+  background:var(--paper);border:2.5px solid var(--brand);
+}
+.tl-item b{font-size:13.5px;color:#3a251c;display:block;margin-bottom:2px}
+.tl-item span{font-size:11.5px;color:var(--brand-2);display:block;margin-bottom:3px}
+.tl-item p{font-size:12.8px;color:var(--ink-2);margin:0}
+
+/* 榜单 */
+.rank{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow)}
+.rank-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.rank-row:last-child{border-bottom:0}
+.rank-no{width:24px;flex:none;font-size:15px;font-weight:800;color:#c3b2a2;text-align:center}
+.rank-row:nth-child(-n+3) .rank-no{color:var(--brand)}
+.rank-name{font-size:14px;color:#3a251c;font-weight:600;flex:1;min-width:0}
+.rank-name em{display:block;font-style:normal;font-size:12px;color:var(--ink-3);font-weight:400}
+.rank-bar{width:110px;height:7px;border-radius:4px;background:var(--paper-2);flex:none;overflow:hidden}
+.rank-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand-2),var(--brand));border-radius:4px}
+.rank-val{font-size:12px;color:var(--ink-3);width:44px;text-align:right;flex:none}
+
+/* ===== 页尾 ===== */
+.footer{background:#2a1f1a;color:#d9cbbf;margin-top:34px;padding:40px 0 0}
+.footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.f-brand .brand-name{color:#f3d9c4;font-size:18px}
+.f-brand p{font-size:13px;color:#a8968a;margin:12px 0 0;line-height:1.8;max-width:320px}
+.f-col h5{font-size:13px;color:#f3d9c4;letter-spacing:1px;margin:0 0 12px}
+.f-col a{display:block;font-size:12.8px;color:#a8968a;padding:4px 0;transition:.16s}
+.f-col a:hover{color:#f3b98a}
+.f-bottom{
+  margin-top:30px;border-top:1px solid #3d2e26;padding:16px 0 22px;
+  font-size:12px;color:#8a7568;
+}
+.f-bottom .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.f-bottom p{margin:0}
+
+/* 无结果提示 */
+.no-res{
+  display:none;background:#fff6ee;border:1px dashed var(--brand-2);border-radius:var(--r-sm);
+  padding:14px 16px;font-size:13.5px;color:var(--brand);margin-bottom:16px;
+}
+.no-res.on{display:block}
+.hide{display:none !important}
+
+@media (max-width:1180px){
+  .layout{grid-template-columns:160px minmax(0,1fr);}
+  .side-right{display:none}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:26px;padding:38px 0 42px}
+  .hero-art{max-width:460px}
+  .layout{grid-template-columns:1fr;gap:24px}
+  .side-left{position:static;order:2}
+  .side-left .side-card{position:static}
+  .chan{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .chan a{background:var(--paper-2);padding:5px 12px}
+  .chan a span{display:none}
+  .footer .wrap{grid-template-columns:1fr 1fr}
+  .search input{width:110px}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .menu-btn{display:inline-block}
+  .nav.open{
+    display:flex;position:absolute;left:0;right:0;top:var(--head-h);
+    background:var(--paper);border-bottom:1px solid var(--line);
+    padding:10px 22px;flex-direction:column;gap:2px;box-shadow:var(--shadow-lg);
+  }
+  .nav.open a{padding:9px 12px;border-radius:8px}
+  .head .wrap{position:relative}
+}
+@media (max-width:740px){
+  :root{--head-h:60px}
+  .wrap{padding:0 15px}
+  .search{display:none}
+  .hero-stats{gap:18px}
+  .cards{grid-template-columns:1fr}
+  .cats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .comments{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare>div{border-bottom:1px solid var(--line) !important}
+  .compare>div:nth-child(odd){background:var(--paper-2)}
+  .deep{padding:20px 18px}
+  .overview{padding:20px 18px}
+  .footer .wrap{grid-template-columns:1fr}
+  .news-item img{width:74px;height:56px}
+  .upd{flex-wrap:wrap;gap:8px}
+  .upd-time{width:auto}
+  .rank-bar{width:70px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="annbar" id="annbar">
+  <div class="wrap">
+    <span class="ann-dot" aria-hidden="true"></span>
+    <span class="ann-text"><b>今日更新</b>：11 月 25 日新增 9 条陪伴活动 · 长者影像计划第 3 期招募开始 · 登高路线新增 4 段无障碍通道</span>
+    <a class="ann-more" href="/#updates">查看动态</a>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#" aria-label="九九重阳日长情陪伴时 首页">
+      <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="#f6e3d6"/>
+        <path d="M24 8c-6.6 0-12 5.4-12 12 0 8.6 9.6 15.6 11.2 16.7.5.3 1.1.3 1.6 0C26.4 35.6 36 28.6 36 20c0-6.6-5.4-12-12-12z" fill="#b5462f"/>
+        <path d="M17 33.5c4.3 1.8 9.7 1.8 14 0" stroke="#c9973f" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <circle cx="24" cy="19" r="3.4" fill="#f6e3d6"/>
+        <path d="M24 15.6v-4M24 26.4v2.6M20.6 19h-4M31.4 19h-2.6" stroke="#f6e3d6" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">九九重阳日长情陪伴时</span>
+        <span class="brand-sub">CHONGYANG TOGETHER</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="/#overview">重阳概览</a>
+      <a href="/#picks">陪伴清单</a>
+      <a href="/#updates">今日动态</a>
+      <a href="/#cats">频道分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#rank">口碑榜</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search" role="search">
+        <input id="q" type="search" placeholder="搜活动、路线、做法" aria-label="站内搜索">
+        <button type="button" id="qbtn">搜索</button>
+      </div>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="nav">频道</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="hero-tag">重阳 · 敬老 · 长情陪伴</span>
+      <h1>九九重阳日长情陪伴时</h1>
+      <p class="hero-lead">从<strong>登高赏菊</strong>到<strong>长者影像记录</strong>，把一次节日过成一段可回看的陪伴。这里汇集可执行的敬老活动方案、可对照的重阳习俗做法，以及 2026 年秋季正在报名的社区陪伴计划。</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="/#picks">看陪伴清单</a>
+        <a class="btn btn-ghost" href="/#guide">按步骤安排一天</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>128</b><span>在册陪伴活动</span></div>
+        <div><b>46 段</b><span>登高路线档案</span></div>
+        <div><b>2.7 万</b><span>长者影像已归档</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 520 420" role="img" aria-label="重阳登高赏菊与长者同行的插画">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fbe6cf"/><stop offset="1" stop-color="#f7d9bd"/>
+          </linearGradient>
+          <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#c9973f"/><stop offset="1" stop-color="#a8762c"/>
+          </linearGradient>
+          <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8a5c33"/><stop offset="1" stop-color="#6b4526"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="520" height="420" rx="20" fill="url(#sky)"/>
+        <circle cx="405" cy="92" r="46" fill="#f3a866" opacity=".85"/>
+        <circle cx="405" cy="92" r="62" fill="#f3a866" opacity=".18"/>
+        <path d="M0 300 Q120 214 240 288 T520 268 V420 H0Z" fill="url(#hill1)" opacity=".55"/>
+        <path d="M0 340 Q140 268 270 330 T520 312 V420 H0Z" fill="url(#hill2)" opacity=".8"/>
+        <g stroke="#6b4526" stroke-width="2.4" fill="none" stroke-linecap="round">
+          <path d="M120 342 L120 262"/><path d="M120 292 L96 272"/><path d="M120 306 L146 284"/>
+          <path d="M400 356 L400 286"/><path d="M400 312 L376 294"/><path d="M400 326 L424 306"/>
+        </g>
+        <g fill="#b5462f">
+          <circle cx="96" cy="268" r="9"/><circle cx="148" cy="280" r="9"/>
+          <circle cx="376" cy="290" r="8"/><circle cx="426" cy="302" r="8"/>
+          <circle cx="120" cy="256" r="7"/>
+        </g>
+        <g fill="#c9973f">
+          <circle cx="96" cy="268" r="3.4"/><circle cx="148" cy="280" r="3.4"/>
+          <circle cx="376" cy="290" r="3"/><circle cx="426" cy="302" r="3"/>
+        </g>
+        <g>
+          <circle cx="236" cy="252" r="16" fill="#f0c9a4"/>
+          <path d="M220 288 q16 -20 32 0 v34 h-32z" fill="#7a4a2c"/>
+          <path d="M236 288 v34" stroke="#5c3620" stroke-width="2"/>
+          <path d="M252 300 l24 -14" stroke="#7a4a2c" stroke-width="6" stroke-linecap="round"/>
+          <path d="M228 322 l-8 22 M244 322 l8 22" stroke="#3f2a1c" stroke-width="6" stroke-linecap="round"/>
+        </g>
+        <g>
+          <circle cx="300" cy="262" r="13" fill="#f0c9a4"/>
+          <path d="M287 292 q13 -16 26 0 v30 h-26z" fill="#b5462f"/>
+          <path d="M287 300 l-20 -10" stroke="#b5462f" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M294 322 l-6 20 M308 322 l6 20" stroke="#3f2a1c" stroke-width="5.5" stroke-linecap="round"/>
+          <path d="M287 288 q13 -10 26 0" stroke="#f6e3d6" stroke-width="2" fill="none"/>
+        </g>
+        <g fill="#8a7568" opacity=".55">
+          <path d="M60 120 q8 -10 16 0 q-8 -4 -16 0z"/>
+          <path d="M96 148 q7 -9 14 0 q-7 -4 -14 0z"/>
+        </g>
+      </svg>
+      <div class="hero-note">本期主打：<b>陪爸妈走完 3.2 公里缓坡</b> · 已更新 11 月 25 日</div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主体 -->
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左栏：频道索引 -->
+    <aside class="side side-left" aria-label="频道索引">
+      <div class="side-card">
+        <div class="side-title">频道索引</div>
+        <nav class="chan">
+          <a href="/#cats"><b>登高路线</b><span>46</span></a>
+          <a href="/#cats"><b>赏菊地图</b><span>23</span></a>
+          <a href="/#cats"><b>长者影像</b><span>31</span></a>
+          <a href="/#cats"><b>社区陪伴</b><span>28</span></a>
+          <a href="/#cats"><b>重阳食单</b><span>19</span></a>
+          <a href="/#cats"><b>适老出行</b><span>17</span></a>
+          <a href="/#cats"><b>家风口述</b><span>22</span></a>
+          <a href="/#cats"><b>志愿招募</b><span>14</span></a>
+          <a href="/#cats"><b>节俗考据</b><span>12</span></a>
+          <a href="/#cats"><b>陪伴手作</b><span>16</span></a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <div class="side-title">今日提醒</div>
+        <p class="mini-note">11 月 25 日 19:30，社区礼堂「给爸妈录一段话」录音棚开放，需提前 1 天在小程序登记；同日登高步道 5 号段因检修封闭至 27 日。</p>
+      </div>
+    </aside>
+
+    <!-- 中栏主内容 -->
+    <main class="main" id="main">
+
+      <!-- 1 概览 -->
+      <section class="sec" id="overview">
+        <div class="sec-head">
+          <h2>重阳节敬老陪伴都在做什么</h2>
+          <span class="sub">领域概览</span>
+        </div>
+        <div class="overview">
+          <p><strong>九九重阳日长情陪伴时</strong>说的并不是某一场活动，而是一整套围绕老人展开的节日行动：登高、赏菊、吃重阳糕、佩茱萸、看望长辈、记录他们的讲述。它把「过节」和「陪人」两件事合在一起，因此内容天然分成两条线——一条是<strong>可执行的节日安排</strong>，一条是<strong>可留存的记忆资产</strong>。</p>
+          <p>从当前可查的活动看，最集中的方向有四个。其一是<strong>登高与赏菊路线</strong>，各地公园在农历九月初九前后会发布缓坡线路、无障碍通道和轮椅租借点，适合带腿脚不便的长辈出行。其二是<strong>长者影像与口述记录</strong>，社区和公益机构在秋季集中开设录音棚、老照片扫描和家庭访谈工作坊，把方言、老手艺、迁居经历整理成可回看的档案。其三是<strong>社区陪伴活动</strong>，包括集体包重阳糕、老年合唱、代际读书会与独居老人上门探访。其四是<strong>节俗本身的做法与考据</strong>，重阳糕的配方比例、菊花酒何时泡、茱萸香囊怎么配，都属于被反复搜索的具体问题。</p>
+          <p>值得注意的是，2026 年秋季的陪伴活动明显向「低门槛」倾斜：大量活动把时长压缩到 90 分钟以内，把场地放在社区一层，允许家属与志愿者共同参与，避免让老人长时间等待或爬楼。若你只有半天时间，优先选「上门探访 + 一次录音」的组合；若有一整天，再考虑登高加家庭聚餐。这个取舍逻辑贯穿全站，后文的清单与指南都按它排序。</p>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="sec" id="picks">
+        <div class="sec-head">
+          <h2>精选陪伴清单</h2>
+          <span class="sub">9 个可报名的条目</span>
+        </div>
+        <p class="sec-intro">每条都标注了时长、适老程度与当前状态，可直接对照自家情况筛选。</p>
+        <div class="no-res" id="noRes">没有找到匹配的条目，换个词试试：登高、重阳糕、录音、探访、菊花。</div>
+        <div class="cards" id="cardGrid">
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-denggao01/400/300" width="400" height="300" loading="lazy" alt="城市北山缓坡登高步道入口与指示牌">
+              <span class="card-badge">登高路线</span>
+            </div>
+            <div class="card-body">
+              <h3>北山 3.2 公里缓坡登高线</h3>
+              <div class="tags"><span class="tag">无障碍</span><span class="tag g">90 分钟</span><span class="tag y">亲子可同行</span></div>
+              <p class="card-desc">全程坡度不超过 8 度，中段设两处休息亭与饮水点，终点观景台可俯瞰城区。适合膝关节一般、但能连续步行一小时的长辈，沿途有茱萸与野菊标识牌。</p>
+              <div class="card-meta"><span class="score">4.8</span><span>已报名 326 人</span><span>11-25 开放</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-juhua02/400/300" width="400" height="300" loading="lazy" alt="公园菊花展台上的多头菊与品种标签">
+              <span class="card-badge">赏菊地图</span>
+            </div>
+            <div class="card-body">
+              <h3>东湖菊展 12 个品种打卡线</h3>
+              <div class="tags"><span class="tag">赏菊</span><span class="tag g">免费</span><span class="tag y">轮椅可入</span></div>
+              <p class="card-desc">从「绿牡丹」到「墨荷」，12 个品种沿环形廊道布展，每处配大字号品种牌。廊道全平，入口可借轮椅，适合视力尚可但走不快的老人慢慢看。</p>
+              <div class="card-meta"><span class="score">4.6</span><span>展期至 11-30</span><span>无需预约</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-luyin03/400/300" width="400" height="300" loading="lazy" alt="社区录音棚内老人对着话筒讲述往事的场景">
+              <span class="card-badge">长者影像</span>
+            </div>
+            <div class="card-body">
+              <h3>「给爸妈录一段话」第 3 期</h3>
+              <div class="tags"><span class="tag">口述记录</span><span class="tag g">60 分钟</span><span class="tag y">可带老照片</span></div>
+              <p class="card-desc">志愿者负责提问与收音，家属可在旁补充。成品为 8—12 分钟音频加一页文字纪要，七个工作日内交付。适合想让长辈讲清一段家史、但自己不会剪的家庭。</p>
+              <div class="card-meta"><span class="score">4.9</span><span>剩余 24 个名额</span><span>11-25 招募</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-gao04/400/300" width="400" height="300" loading="lazy" alt="刚出笼的重阳糕切面与桂花点缀">
+              <span class="card-badge">重阳食单</span>
+            </div>
+            <div class="card-body">
+              <h3>低糖重阳糕家庭配方</h3>
+              <div class="tags"><span class="tag">食谱</span><span class="tag g">含糖量降 40%</span><span class="tag y">适合控糖老人</span></div>
+              <p class="card-desc">用糯米粉与粘米粉 7:3 配比，糖量减至常规的四成，靠桂花与红枣提味。给出蒸制时间与回软要点，附一张九层糕的插枣顺序图，避免蒸出来夹生。</p>
+              <div class="card-meta"><span class="score">4.7</span><span>收藏 5218</span><span>11-20 更新</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-tanfang05/400/300" width="400" height="300" loading="lazy" alt="志愿者提着慰问品敲开独居老人房门">
+              <span class="card-badge">社区陪伴</span>
+            </div>
+            <div class="card-body">
+              <h3>独居老人上门探访结对</h3>
+              <div class="tags"><span class="tag">志愿</span><span class="tag g">2 人一组</span><span class="tag y">需岗前培训</span></div>
+              <p class="card-desc">按楼栋匹配，一次探访 40 分钟，重点检查燃气、用药与取暖设备，并留下紧急联系卡。培训 30 分钟，含沟通话术与禁忌话题提醒，不适合临时起意参加。</p>
+              <div class="card-meta"><span class="score">4.8</span><span>已结对 187 户</span><span>11-24 更新</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-shila06/400/300" width="400" height="300" loading="lazy" alt="老人翻看老相册并与家人交谈">
+              <span class="card-badge">家风口述</span>
+            </div>
+            <div class="card-body">
+              <h3>老照片归档与访谈提纲</h3>
+              <div class="tags"><span class="tag">口述史</span><span class="tag g">模板可下载</span><span class="tag y">在家可做</span></div>
+              <p class="card-desc">提供 18 个问题的访谈提纲，从「第一份工作」问到「最想留下的一句话」，并给出照片扫描的分辨率与命名规则。不需要预约，适合国庆到重阳之间慢慢做。</p>
+              <div class="card-meta"><span class="score">4.6</span><span>下载 1.2 万次</span><span>11-18 更新</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-xiangnang07/400/300" width="400" height="300" loading="lazy" alt="桌上摊开的茱萸与缝制中的香囊">
+              <span class="card-badge">陪伴手作</span>
+            </div>
+            <div class="card-body">
+              <h3>茱萸香囊两小时手作课</h3>
+              <div class="tags"><span class="tag">手作</span><span class="tag g">亲子可同做</span><span class="tag y">材料包现场发</span></div>
+              <p class="card-desc">讲解茱萸、艾叶、陈皮的配比与用量，缝制一个可挂床头的小香囊。针法只有平针和回针两种，老人易上手，孙辈可负责装填与系绳。</p>
+              <div class="card-meta"><span class="score">4.7</span><span>剩余 15 席</span><span>11-22 更新</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-juhuajiu08/400/300" width="400" height="300" loading="lazy" alt="玻璃罐中浸泡的菊花酒与标签">
+              <span class="card-badge">节俗考据</span>
+            </div>
+            <div class="card-body">
+              <h3>菊花酒什么时候泡最合适</h3>
+              <div class="tags"><span class="tag">习俗</span><span class="tag g">含替代方案</span><span class="tag y">含禁忌说明</span></div>
+              <p class="card-desc">梳理「重阳前一日泡、次日饮」的旧例与当代做法差异，说明用杭白菊还是贡菊的取舍，并给出不饮酒长辈可用的菊花蜜饮替代方案与用量。</p>
+              <div class="card-meta"><span class="score">4.5</span><span>收藏 2874</span><span>11-15 更新</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="https://picsum.photos/seed/chongyang-shilaochuxing09/400/300" width="400" height="300" loading="lazy" alt="适老出行清单与随身药盒摆放">
+              <span class="card-badge">适老出行</span>
+            </div>
+            <div class="card-body">
+              <h3>半日出行随身清单（含药盒）</h3>
+              <div class="tags"><span class="tag">清单</span><span class="tag g">可打印</span><span class="tag y">含应急联系页</span></div>
+              <p class="card-desc">按「证件、药物、保暖、联络、零钱」五格排列，特别标注降压药与救心丸的随身位置，以及午后降温时加一件背心的提醒，适合子女代备。</p>
+              <div class="card-meta"><span class="score">4.8</span><span>下载 9630 次</span><span>11-21 更新</span></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="sec" id="updates">
+        <div class="sec-head">
+          <h2>最新更新与报名动态</h2>
+          <span class="sub">11 月 25 日前后</span>
+        </div>
+        <div class="updates">
+          <div class="upd"><span class="upd-time"><b>今天 09:30</b>11-25</span><div class="upd-main"><h4>北山缓坡登高线恢复开放</h4><p>3 号段护栏更换完成，今日起重新开放，轮椅租借点增至 2 处。</p></div><span class="upd-kind">路线</span></div>
+          <div class="upd"><span class="upd-time"><b>今天 08:10</b>11-25</span><div class="upd-main"><h4>「给爸妈录一段话」第 3 期开放报名</h4><p>本周六日分四场，每场 6 组家庭，需携带一张老照片用于开场。</p></div><span class="upd-kind">影像</span></div>
+          <div class="upd"><span class="upd-time"><b>昨天 20:40</b>11-24</span><div class="upd-main"><h4>东湖菊展夜场加开两晚</h4><p>因白天客流集中，11 月 26 日、27 日延长至 20:00，灯光下观菊需注意台阶。</p></div><span class="upd-kind">赏菊</span></div>
+          <div class="upd"><span class="upd-time"><b>昨天 17:05</b>11-24</span><div class="upd-main"><h4>独居老人探访结对新增 12 户</h4><p>集中在城西三个老小区，报名志愿者需完成 30 分钟岗前培训。</p></div><span class="upd-kind">志愿</span></div>
+          <div class="upd"><span class="upd-time"><b>11-23 15:20</b></span><div class="upd-main"><h4>低糖重阳糕配方修订第二版</h4><p>补充了糯米粉吸水差异的调整区间，蒸制时间改为 32 分钟并附判断方法。</p></div><span class="upd-kind">食单</span></div>
+          <div class="upd"><span class="upd-time"><b>11-22 11:00</b></span><div class="upd-main"><h4>茱萸香囊手作课加开周日下午场</h4><p>剩余 15 席，材料包含茱萸 30 克，现场有老花镜与放大镜可借。</p></div><span class="upd-kind">手作</span></div>
+          <div class="upd"><span class="upd-time"><b>11-21 09:40</b></span><div class="upd-main"><h4>半日出行清单更新应急联系页</h4><p>新增社区值班电话与就近三甲医院急诊位置，可手写填入。</p></div><span class="upd-kind">出行</span></div>
+          <div class="upd"><span class="upd-time"><b>11-20 16:30</b></span><div class="upd-main"><h4>老照片扫描点新增两台设备</h4><p>图书馆二层自助区可扫至 1200 dpi，凭身份证登记，单次限 40 张。</p></div><span class="upd-kind">口述</span></div>
+          <div class="upd"><span class="upd-time"><b>11-19 10:15</b></span><div class="upd-main"><h4>重阳节俗考据专栏补入方言条目</h4><p>整理六地关于「登高避灾」的不同说法，附发音标注与讲述人信息。</p></div><span class="upd-kind">考据</span></div>
+          <div class="upd"><span class="upd-time"><b>11-18 14:00</b></span><div class="upd-main"><h4>代际读书会秋季书目确定</h4><p>共读《城南旧事》与一本地方志，每场 8 组祖孙，需提前领书。</p></div><span class="upd-kind">陪伴</span></div>
+        </div>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="sec" id="cats">
+        <div class="sec-head">
+          <h2>按需求找分类</h2>
+          <span class="sub">8 个直达频道</span>
+        </div>
+        <div class="cats">
+          <a class="cat" href="/#picks"><b>登高路线</b><span>缓坡线路、轮椅通道、休息点分布与体力分级</span><i>46 段路线</i></a>
+          <a class="cat" href="/#picks"><b>赏菊地图</b><span>品种展、公园花境、夜场时间与拍照点位</span><i>23 处花展</i></a>
+          <a class="cat" href="/#picks"><b>长者影像</b><span>录音棚、口述访谈、老照片扫描与成片交付</span><i>31 个计划</i></a>
+          <a class="cat" href="/#picks"><b>社区陪伴</b><span>上门探访、结对帮扶、集体活动与培训要求</span><i>28 项活动</i></a>
+          <a class="cat" href="/#picks"><b>重阳食单</b><span>重阳糕配比、菊花酒泡法、低糖替代与禁忌</span><i>19 份食谱</i></a>
+          <a class="cat" href="/#picks"><b>适老出行</b><span>随身清单、药盒整理、交通接驳与应急联系</span><i>17 份清单</i></a>
+          <a class="cat" href="/#picks"><b>家风口述</b><span>访谈提纲、录音要点、方言整理与家庭存档</span><i>22 套模板</i></a>
+          <a class="cat" href="/#picks"><b>志愿招募</b><span>岗前培训、服务时段、结对规则与注意事项</span><i>14 个岗位</i></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="sec" id="deep">
+        <div class="sec-head">
+          <h2>重阳陪伴怎么做才不流于形式</h2>
+          <span class="sub">深度解析</span>
+        </div>
+        <article class="deep">
+          <h3>一、先分清「节日仪式」和「日常陪伴」两件事</h3>
+          <p>很多人把重阳的全部期待压在一天里：早上登高、中午聚餐、下午拍照、晚上视频通话，结果老人比平时更累。更合理的做法是把这一天拆成两类内容。<strong>节日仪式</strong>负责制造记忆点，比如一起做一次重阳糕、走一段有名字的登高线、拍一张每年同角度的合影；<strong>日常陪伴</strong>负责解决实际问题，比如整理药盒、检查燃气、把紧急联系人写进手机。仪式可以一年一次，实际问题必须持续跟进。</p>
+          <p>判断一次安排是否值得做，有个简单标准：结束后老人是否需要额外休息半天。如果需要，说明强度超了。把登高从 5 公里降到 3 公里、把聚餐从外面改到家里、把拍照从全程跟拍改成定点一张，往往比增加项目更有价值。</p>
+
+          <h3>二、三大主流陪伴方式的实际差异</h3>
+          <p>当前可参与的活动大致分三类，适合的人群和投入差别很大，选错类型是最常见的时间浪费。</p>
+          <div class="compare">
+            <div>方式</div><div>适合谁 / 主要成本</div>
+            <div>登高赏菊类</div><div>能连续步行 40 分钟以上、喜欢户外的长辈；成本是半天时间与交通，回报是当场可见的愉快</div>
+            <div>长者影像类</div><div>愿意讲述、但平日话不多的长辈；成本是 1 小时录音加后期等待，回报是可反复回看的档案</div>
+            <div>社区探访类</div><div>独居或子女不在身边的老人；成本是志愿者培训与固定时段，回报是持续的联系网络</div>
+          </div>
+          <p>如果长辈身体一般，优先选影像类，因为它可以在室内完成，且不依赖天气；如果长辈闷在家里久了，优先选登高类，哪怕只走 1 公里；如果长辈确实独居，社区探访类的长期价值大于一次性送礼。</p>
+
+          <h3>三、重阳糕与菊花酒：几个常被问错的技术点</h3>
+          <p>节俗做法看似简单，失败往往出在比例和时机上。以下是被反复验证的要点：</p>
+          <ul>
+            <li><strong>粉料比例</strong>：糯米粉与粘米粉 7:3 更易成形，全用糯米粉会过黏，冷却后切不开。</li>
+            <li><strong>加水量</strong>：以「握团成块、轻碰即散」为准，不同品牌吸水差异可达 15%，不要一次加足。</li>
+            <li><strong>蒸制时间</strong>：九层结构需 30 分钟以上，中途不加冷水，关火后焖 5 分钟再开盖。</li>
+            <li><strong>菊花酒时机</strong>：传统做法在重阳前一日以干菊入酒，浸泡 12—24 小时即可；久泡会发苦，不建议超过三天。</li>
+            <li><strong>替代方案</strong>：不饮酒的长辈可用菊花加少量蜂蜜温泡，水温 80℃ 左右，避免沸水破坏香气。</li>
+          </ul>
+          <div class="quote">一位常年做重阳糕的社区厨娘提到：老人真正在意的不是糕有几层，而是有没有人和他一起等那锅糕蒸熟。</div>
+
+          <h3>四、给长辈录音，问题比设备重要</h3>
+          <p>长者影像计划里最常见的误区是「设备买得很贵，问题问得很空」。真正让录音有价值的，是具体到年份、地点、人名的问题。比如不要问「您年轻时过得怎么样」，而问「您第一次领工资是多少钱，当时买了什么」。前者只能得到「还行」，后者能带出一整段生活细节。</p>
+          <p>访谈节奏建议分三段：先用老照片破冰，让长辈指着照片说人；再问工作与迁居，这类问题有明确时间线，容易展开；最后问「最想对孙辈说的一句话」，通常能收到整场最凝练的表达。全程控制在 60 分钟内，中途主动停一次喝水，避免长辈疲劳后语速变快、细节变少。</p>
+
+          <h3>五、判断一次陪伴是否「到位」的三个观察点</h3>
+          <ol>
+            <li><strong>有没有留下可回看的东西</strong>：一张同角度合影、一段录音、一页手写菜谱，比朋友圈九宫格更耐久。</li>
+            <li><strong>有没有解决一个具体问题</strong>：药盒是否按周分好、取暖设备是否检查、紧急联系人是否存进手机。</li>
+            <li><strong>有没有约定下一次</strong>：把「下次再来」变成具体日期，陪伴才不会停在节日当天。</li>
+          </ol>
+          <p>这三点不需要同时做到，能做到两点，这次重阳就算没有白过。九九重阳日长情陪伴时的重点从来不在「隆重」，而在「具体」——具体的路线、具体的配方、具体的一个人。</p>
+        </article>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="sec" id="guide">
+        <div class="sec-head">
+          <h2>半天怎么安排：从选类型到落地</h2>
+          <span class="sub">体验指南</span>
+        </div>
+        <div class="steps">
+          <div class="step"><h4>先问长辈想不想出门</h4><p>直接问「想出去走走，还是在家待着」，不要替他决定。愿意出门再选登高或赏菊，不愿意就转影像与手作。</p></div>
+          <div class="step"><h4>按体力选路线长度</h4><p>能连续走 40 分钟选 3 公里线；走 15 分钟需歇的选 1 公里环线或平层花展；用轮椅的只看无障碍通道标注。</p></div>
+          <div class="step"><h4>把出发时间往后挪一小时</h4><p>秋季早晨气温低、关节僵，九点后出发更稳妥；下午四点前返回，避开降温与晚高峰。</p></div>
+          <div class="step"><h4>带三样东西即可</h4><p>常用药与温水、一件可加的外套、一张写了联系人电话的纸卡。其余物品越少越轻松。</p></div>
+          <div class="step"><h4>安排一个「坐下来」的环节</h4><p>登高后找地方吃块重阳糕，或回家一起翻十分钟老照片，让身体缓下来，也给聊天留出空间。</p></div>
+          <div class="step"><h4>当天定下下次时间</h4><p>离开前说清「下个月哪天再来」，并当场记进日历。陪伴的连续性比单次强度更重要。</p></div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="sec" id="faq">
+        <div class="sec-head">
+          <h2>常见问题</h2>
+          <span class="sub">6 个高频疑问</span>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>重阳节登高一定要爬山吗？</summary>
+            <div class="faq-body"><p>不一定。传统登高重在「往高处走」，城市里的缓坡步道、观景平台、甚至高层公园的环形坡道都算。对膝关节不好的长辈，选坡度 8 度以内、有休息亭的路线更合适，不必追求海拔。</p></div>
+          </details>
+          <details>
+            <summary>重阳糕和普通年糕有什么区别？</summary>
+            <div class="faq-body"><p>重阳糕多为多层结构，粉料以糯米粉加粘米粉为主，层间夹红枣、豆沙或桂花，讲究「九层」与插小旗；年糕则以糯米为主、质地更紧实，通常切片炒或煮汤。口感上重阳糕更松软、偏甜。</p></div>
+          </details>
+          <details>
+            <summary>第一次带长辈做口述录音，从哪个问题开始？</summary>
+            <div class="faq-body"><p>从一张老照片开始最稳。请长辈指着照片说「这是谁、在哪、哪一年」，比抽象提问更容易开口。等话题热起来，再问第一份工作、第一次搬家这类有时间线的问题。</p></div>
+          </details>
+          <details>
+            <summary>社区探访类志愿活动一般要培训多久？</summary>
+            <div class="faq-body"><p>多数为 30 分钟到 1 小时，内容包括沟通话术、禁忌话题、安全检查和记录表填写。未完成培训通常不能单独上门，需与有经验的志愿者两人一组。</p></div>
+          </details>
+          <details>
+            <summary>菊花酒泡多久合适，不喝酒的长辈怎么办？</summary>
+            <div class="faq-body"><p>干菊入酒浸泡 12—24 小时风味最好，超过三天容易发苦。不饮酒的长辈可用干菊加少量蜂蜜，以 80℃ 左右温水冲泡，闷三分钟即可，香气接近且不含酒精。</p></div>
+          </details>
+          <details>
+            <summary>只有半天时间，登高和录影只能选一个，怎么定？</summary>
+            <div class="faq-body"><p>看长辈近期状态。若他最近少出门、情绪低，选登高，户外与同行感更直接；若他身体一般但愿意讲话，选录影，室内不受天气影响且成品可留存。两者都以 90 分钟内为宜。</p></div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="sec" id="comments">
+        <div class="sec-head">
+          <h2>参与者怎么说</h2>
+          <span class="sub">16 条真实反馈</span>
+        </div>
+        <div class="comments">
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b5462f">林</span><b>林间小满</b><span>11-25</span></div><p>带我妈走了北山那条缓坡线，中途两个亭子正好歇脚。她说比去年爬台阶舒服多了，就是希望指示牌字再大一点。</p><span class="like">有用 42</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4f7359">周</span><b>周末煮饭人</b><span>11-25</span></div><p>低糖重阳糕按 7:3 做的，第一次水加多了有点塌，第二次按「握团轻碰即散」就成功了。控糖的爸吃了两块。</p><span class="like">有用 67</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c9973f">阿</span><b>阿岚不加班</b><span>11-24</span></div><p>录音那场志愿者很会引导，我爸讲了他 1978 年进厂的事，我从来不知道。成品 11 分钟，家里人都听哭了。</p><span class="like">有用 88</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8a5c33">老</span><b>老陈头下棋</b><span>11-24</span></div><p>菊展品种牌写得清楚，就是周末人太多，轮椅推进去要等。建议错峰，工作日上午去体验好很多。</p><span class="like">有用 21</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#7a4a2c">夏</span><b>夏至未至</b><span>11-23</span></div><p>香囊课的茱萸味道比想象中冲，老人觉得提神，小孩嫌呛。配比里艾叶多一点会柔和些，可以自己调。</p><span class="like">有用 15</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b5462f">南</span><b>南墙有花</b><span>11-23</span></div><p>探访结对培训讲得实在，尤其提醒别一进门就问子女情况。我们那户老人聊了快一小时才肯让我们走。</p><span class="like">有用 53</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4f7359">胖</span><b>胖橘的铲屎官</b><span>11-22</span></div><p>半日清单打印出来贴在门口，药盒那格最实用。就是应急联系页留白太小，写三个电话就满了。</p><span class="like">有用 34</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c9973f">秋</span><b>秋刀鱼罐头</b><span>11-22</span></div><p>菊花酒泡了 12 小时确实香，泡到第三天那罐发苦了，别贪久。给不喝酒的奶奶做了菊花蜜饮，她说比糖水好喝。</p><span class="like">有用 29</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8a5c33">一</span><b>一只慢蜗牛</b><span>11-21</span></div><p>访谈提纲 18 个问题有点多，我们实际只聊了前 6 个就两个小时了。建议标一下哪些是必问的。</p><span class="like">有用 18</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#7a4a2c">木</span><b>木木不熬夜</b><span>11-21</span></div><p>老照片扫描点排队不长，40 张限制对普通家庭够用。1200dpi 出来的文件很大，记得带个大点的 U 盘。</p><span class="like">有用 12</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b5462f">海</span><b>海边的卡夫卡</b><span>11-20</span></div><p>代际读书会名额太少，抢了两次没抢到。希望能增加场次，祖孙一起读地方志这个点子很好。</p><span class="like">有用 9</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4f7359">小</span><b>小满的爷爷</b><span>11-20</span></div><p>七十多了，第一次被孙女拉着录音，开始觉得别扭，讲着讲着就停不下来。这东西留得下来，挺好。</p><span class="like">有用 76</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c9973f">豆</span><b>豆浆配油条</b><span>11-19</span></div><p>登高线标注的「8 度以内」很实在，我用手机测坡软件对了一下基本吻合。比那些只写「适合老人」的靠谱。</p><span class="like">有用 31</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8a5c33">云</span><b>云上散步</b><span>11-19</span></div><p>夜场菊展灯光是好看，但台阶多，老人晚上视线不好容易踩空。白天去更稳妥，这点提醒得对。</p><span class="like">有用 24</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#7a4a2c">半</span><b>半糖去冰</b><span>11-18</span></div><p>重阳糕蒸 32 分钟我试了，中间不加冷水这条很关键。之前开盖看过一次，结果中间夹生，白忙活。</p><span class="like">有用 40</span></div>
+          <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b5462f">麦</span><b>麦田守望者</b><span>11-18</span></div><p>整体安排挺实在，唯一想说的是探访活动周末场太少，上班族基本只能报周日，希望多开几个时段。</p><span class="like">有用 17</span></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="sec" id="news">
+        <div class="sec-head">
+          <h2>相关资讯</h2>
+          <span class="sub">近 30 天</span>
+        </div>
+        <div class="news">
+          <a class="news-item" href="/#updates">
+            <img src="https://picsum.photos/seed/chongyang-news01/600/400" width="600" height="400" loading="lazy" alt="城市公园缓坡步道改造后的入口">
+            <div class="news-body"><h4>六座城市公园完成缓坡改造，重阳前投入使用</h4><p>改造重点在坡度与休息点密度，新增轮椅租借与大字号导视，优先服务老年游客。</p><span class="news-date">2026-11-25</span></div>
+          </a>
+          <a class="news-item" href="/#updates">
+            <img src="https://picsum.photos/seed/chongyang-news02/600/400" width="600" height="400" loading="lazy" alt="长者口述档案整理工作台与录音设备">
+            <div class="news-body"><h4>长者口述档案库新增方言标注规范</h4><p>统一了六地发音标注方式，志愿者可在录音后直接套用，方便后续检索与整理。</p><span class="news-date">2026-11-23</span></div>
+          </a>
+          <a class="news-item" href="/#updates">
+            <img src="https://picsum.photos/seed/chongyang-news03/600/400" width="600" height="400" loading="lazy" alt="重阳糕制作台与低糖配方说明卡">
+            <div class="news-body"><h4>低糖重阳糕配方在社区厨房推广</h4><p>针对控糖人群调整糖量，保留桂花与红枣提味，首批在 12 个社区试点教学。</p><span class="news-date">2026-11-21</span></div>
+          </a>
+          <a class="news-item" href="/#updates">
+            <img src="https://picsum.photos/seed/chongyang-news04/600/400" width="600" height="400" loading="lazy" alt="志愿者培训教室内的结对名单白板">
+            <div class="news-body"><h4>独居老人探访结对扩大到城西三个老小区</h4><p>新增 12 户结对，志愿者需完成岗前培训，重点检查取暖与用药安全。</p><span class="news-date">2026-11-20</span></div>
+          </a>
+          <a class="news-item" href="/#updates">
+            <img src="https://picsum.photos/seed/chongyang-news05/600/400" width="600" height="400" loading="lazy" alt="图书馆自助扫描区与老照片">
+            <div class="news-body"><h4>图书馆老照片自助扫描点延长开放时间</h4><p>周末延至 20:00，单次限 40 张，凭身份证登记，可自带存储设备。</p><span class="news-date">2026-11-19</span></div>
+          </a>
+          <a class="news-item" href="/#updates">
+            <img src="https://picsum.photos/seed/chongyang-news06/600/400" width="600" height="400" loading="lazy" alt="祖孙共读一册地方志的场景">
+            <div class="news-body"><h4>代际读书会秋季书目公布，祖孙共读地方志</h4><p>共读《城南旧事》与一本地方志，每场 8 组祖孙，需提前领书并完成一次预读。</p><span class="news-date">2026-11-18</span></div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="sec" id="rec">
+        <div class="sec-head">
+          <h2>延伸方向</h2>
+          <span class="sub">8 个可继续看的方向</span>
+        </div>
+        <div class="rec-tags">
+          <a href="/#picks">重阳糕九层插枣顺序</a>
+          <a href="/#picks">轮椅可入的平层花展</a>
+          <a href="/#picks">方言讲述的录音设备选择</a>
+          <a href="/#picks">茱萸香囊的三种配比</a>
+          <a href="/#picks">独居老人冬季取暖检查</a>
+          <a href="/#picks">给听力下降长辈的访谈技巧</a>
+          <a href="/#picks">重阳合影的固定角度与年份标记</a>
+          <a href="/#picks">节后延续陪伴的月度计划</a>
+        </div>
+      </section>
+
+      <!-- 11 榜单 + 时间线 -->
+      <section class="sec" id="rank">
+        <div class="sec-head">
+          <h2>本周陪伴口碑榜</h2>
+          <span class="sub">按参与者评分与完成度</span>
+        </div>
+        <div class="rank">
+          <div class="rank-row"><span class="rank-no">1</span><span class="rank-name">「给爸妈录一段话」第 3 期<em>影像 · 完成度 96%</em></span><span class="rank-bar"><i style="width:96%"></i></span><span class="rank-val">4.9</span></div>
+          <div class="rank-row"><span class="rank-no">2</span><span class="rank-name">北山 3.2 公里缓坡登高线<em>路线 · 完成度 92%</em></span><span class="rank-bar"><i style="width:92%"></i></span><span class="rank-val">4.8</span></div>
+          <div class="rank-row"><span class="rank-no">3</span><span class="rank-name">独居老人上门探访结对<em>志愿 · 完成度 89%</em></span><span class="rank-bar"><i style="width:89%"></i></span><span class="rank-val">4.8</span></div>
+          <div class="rank-row"><span class="rank-no">4</span><span class="rank-name">半日出行随身清单<em>清单 · 完成度 85%</em></span><span class="rank-bar"><i style="width:85%"></i></span><span class="rank-val">4.8</span></div>
+          <div class="rank-row"><span class="rank-no">5</span><span class="rank-name">低糖重阳糕家庭配方<em>食单 · 完成度 82%</em></span><span class="rank-bar"><i style="width:82%"></i></span><span class="rank-val">4.7</span></div>
+          <div class="rank-row"><span class="rank-no">6</span><span class="rank-name">茱萸香囊两小时手作课<em>手作 · 完成度 80%</em></span><span class="rank-bar"><i style="width:80%"></i></span><span class="rank-val">4.7</span></div>
+          <div class="rank-row"><span class="rank-no">7</span><span class="rank-name">东湖菊展 12 个品种打卡线<em>赏菊 · 完成度 78%</em></span><span class="rank-bar"><i style="width:78%"></i></span><span class="rank-val">4.6</span></div>
+          <div class="rank-row"><span class="rank-no">8</span><span class="rank-name">老照片归档与访谈提纲<em>口述 · 完成度 74%</em></span><span class="rank-bar"><i style="width:74%"></i></span><span class="rank-val">4.6</span></div>
+        </div>
+      </section>
+
+      <section class="sec" id="timeline">
+        <div class="sec-head">
+          <h2>重阳前后时间线</h2>
+          <span class="sub">按节点安排</span>
+        </div>
+        <div class="timeline">
+          <div class="tl">
+            <div class="tl-item"><b>重阳前一周：定人定事</b><span>11 月 18 日—21 日</span><p>确认长辈想出门还是在家，报名影像或手作类活动，领取访谈提纲。</p></div>
+            <div class="tl-item"><b>重阳前一日：备物与泡酒</b><span>11 月 22 日</span><p>按清单备药、外套与联系卡；干菊入酒浸泡，重阳糕粉料提前称好。</p></div>
+            <div class="tl-item"><b>重阳当日：登高与聚餐</b><span>11 月 23 日</span><p>九点后出发走缓坡线，中午回家蒸糕，下午翻老照片并录一段话。</p></div>
+            <div class="tl-item"><b>节后第一周：交付与回看</b><span>11 月 24 日—30 日</span><p>收取录音成品，整理照片命名，把紧急联系人存进长辈手机。</p></div>
+            <div class="tl-item"><b>节后一个月：约定下一次</b><span>12 月中下旬</span><p>按月度计划回访一次，检查取暖与用药，把陪伴从节日延到日常。</p></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏辅助 -->
+    <aside class="side side-right" aria-label="辅助信息">
+      <div class="side-card">
+        <div class="side-title">本周热榜</div>
+        <ol class="hotlist">
+          <li><a href="/#picks">「给爸妈录一段话」第 3 期<em>剩余 24 个名额</em></a></li>
+          <li><a href="/#picks">北山 3.2 公里缓坡登高线<em>今日恢复开放</em></a></li>
+          <li><a href="/#picks">低糖重阳糕家庭配方<em>收藏 5218</em></a></li>
+          <li><a href="/#picks">独居老人上门探访结对<em>新增 12 户</em></a></li>
+          <li><a href="/#picks">半日出行随身清单<em>下载 9630</em></a></li>
+          <li><a href="/#picks">茱萸香囊两小时手作课<em>剩余 15 席</em></a></li>
+        </ol>
+      </div>
+      <div class="side-card">
+        <div class="side-title">数据说明</div>
+        <p class="mini-note">报名人数、剩余名额与评分均为截至 2026 年 11 月 25 日的记录，随活动进展变动；路线坡度与长度来自各公园公开导视信息。</p>
+      </div>
+      <div class="side-card">
+        <div class="side-title">快速入口</div>
+        <nav class="chan">
+          <a href="/#guide"><b>半天安排步骤</b><span>→</span></a>
+          <a href="/#faq"><b>常见问题</b><span>→</span></a>
+          <a href="/#rank"><b>口碑榜</b><span>→</span></a>
+        </nav>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-brand">
+      <span class="brand-name">九九重阳日长情陪伴时</span>
+      <p>一份围绕重阳节敬老与陪伴的行动索引：登高路线、赏菊地图、长者影像、社区探访与节俗做法，按可执行、可回看的标准整理。</p>
+    </div>
+    <div class="f-col">
+      <h5>频道</h5>
+      <a href="/#cats">登高路线</a>
+      <a href="/#cats">赏菊地图</a>
+      <a href="/#cats">长者影像</a>
+      <a href="/#cats">社区陪伴</a>
+    </div>
+    <div class="f-col">
+      <h5>做法与指南</h5>
+      <a href="/#picks">重阳食单</a>
+      <a href="/#picks">适老出行</a>
+      <a href="/#guide">半天安排</a>
+      <a href="/#faq">常见问题</a>
+    </div>
+    <div class="f-col">
+      <h5>参与</h5>
+      <a href="/#updates">最新动态</a>
+      <a href="/#rank">口碑榜</a>
+      <a href="/#timeline">时间线</a>
+      <a href="/#rec">延伸方向</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <div class="wrap">
+      <p>© 2026 九九重阳日长情陪伴时 · 内容为活动索引与节俗整理，报名信息以各主办方公示为准</p>
+      <p>页面数据截至 2026-11-25</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('nav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}
+    });
+  }
+
+  var q=document.getElementById('q');
+  var qbtn=document.getElementById('qbtn');
+  var grid=document.getElementById('cardGrid');
+  var noRes=document.getElementById('noRes');
+  if(!grid) return;
+  var cards=Array.prototype.slice.call(grid.querySelectorAll('.card'));
+
+  function doSearch(){
+    var kw=(q&&q.value||'').trim().toLowerCase();
+    if(!kw){
+      cards.forEach(function(c){c.classList.remove('hide')});
+      noRes.classList.remove('on');
+      return;
+    }
+    var hit=0;
+    cards.forEach(function(c){
+      var txt=c.textContent.toLowerCase();
+      if(txt.indexOf(kw)>-1){c.classList.remove('hide');hit++;}
+      else{c.classList.add('hide');}
+    });
+    if(hit===0){noRes.classList.add('on');}else{noRes.classList.remove('on');}
+  }
+  if(qbtn){qbtn.addEventListener('click',doSearch);}
+  if(q){
+    q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();doSearch();}});
+    q.addEventListener('input',function(){if(!q.value.trim())doSearch();});
+  }
+})();
+</script>
+</body>
+                </html>
